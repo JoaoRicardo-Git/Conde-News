@@ -28,7 +28,10 @@ body {
     width: 100%;
     height: 10vh;
 
-    background: #ff0000;
+    background: #000000;
+
+    align-items: center;
+    justify-content: space-around;
 
 }
 
@@ -42,7 +45,7 @@ body {
     content: "";
     /* Necessário para que o pseudo-elemento(::before) seja renderizado */
 
-    height: 95px;
+    height: 99px;
     width: 177px;
 
     background-size: contain;
@@ -51,6 +54,50 @@ body {
     /* Evita que a imagem se repita */
     background-position: center;
     /* Centraliza a imagem dentro do elemento */
+
+}
+
+.line_options {
+
+    display: flex;
+
+    width: 40%;
+
+    justify-content: space-between;
+
+    gap: 20px;
+
+}
+
+.line_options a {
+
+    position: relative;
+    text-decoration: none;
+    padding: 0 20px;
+
+    font-size: 25px;
+
+    color: white;
+    text-decoration: none;
+
+}
+
+.line_options a:not(:last-child)::after {
+
+  content: "";
+  position: absolute;
+  
+  right: -11px;
+  top: 50%;
+
+  transform: translateY(-50%);
+
+  width: 2px;
+  height: 1.5em;
+
+  background-color: #ffffff;
+
+  pointer-events: none; /* impede que a linha seja clicada */
 
 }
 
@@ -107,3 +154,4 @@ body {
     /* Centraliza a imagem dentro do elemento */
 
 }
+
