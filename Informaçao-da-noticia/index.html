@@ -8,35 +8,60 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body class="conteiner_noticia">
 
-    <main class="conteiner_noticia">
+    <header class="cabecalho_noticia">
 
-        <header class="cabecalho_noticia">
+        <a href="Tela-Principal">
+            <div class="imagemLogoNews"></div>
+        </a>
 
-            <a href="Tela-Principal">
-                <div class="imagemLogoNews"></div>
-            </a>
+        <nav class="line_options">
 
-            <nav class="line_options">
+            <a href="Tela-Principal">Sobre a Escola</a>
+            <a href="Tela-Principal">Atividades deste Bimestre</a>
+            <a href="Tela-Principal">Apps Usados</a>
 
-                <a href="Tela-Principal">Sobre a Escola</a>
-                <a href="Tela-Principal">Atividades deste Bimestre</a>
-                <a href="Tela-Principal">Apps Usados</a>
+        </nav>
 
-            </nav>
+        <div class="pesquisar">
 
-            <div class="pesquisar">
+            <span class="lupaIcon"></span>
+            <input type="text" class="search" placeholder="Pesquisar...">
 
-                <span class="lupaIcon"></span>
-                <input type="text" class="search" placeholder="Pesquisar...">
+        </div>
+
+    </header>
+
+    <main>
+
+        <article class="conteudo_noticia">
+
+            <header>
+
+                <aside>Aviso</aside>
+
+                <textarea readonly name="Titulo" 
+                id="TituloNoticia">Prova do professor Álvaro causa confusão com data inusitada: Dia 32/13</textarea>
+
+                <p class="quemEditou">Diretoria Conde <span class="ponto"> ° </span> Conde José Vicente de Azevedo</p>
+
+            <div class="ultimaAtualizacao">
+
+                <time datetime="31-13-2027T23:99">31/13/2027 23:99</time>
+                <img src="./assets/imgs/Rectangle 43.png" alt="imgRelogio">
+                <p>Atualizada em 31/13/2027 23h99</p>
 
             </div>
+                
+
+                <div class="ImagemDaNoticia"></div>
+
+            </header>
 
 
-        </header>
 
-        
+        </article>
 
     </main>
 
